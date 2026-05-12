@@ -1,0 +1,7 @@
+solana==0.30.0
+websockets==10.4
+requests==2.31.0
+python-dotenv==1.0.0
+pynacl==1.5.0
+pycryptodome==3.19.0
+loguru==0.7.2
