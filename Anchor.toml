@@ -1,0 +1,25 @@
+[provider]
+cluster = "devnet"
+wallet = "~/.config/solana/id.json"
+
+[programs.localnet]
+scenic_review = "2QWH1NEeJyo8RB4hGymgsj9jwKNCjumKr46yim7bhk9x"
+
+[programs.devnet]
+scenic_review = "2QWH1NEeJyo8RB4hGymgsj9jwKNCjumKr46yim7bhk9x"
+
+[build]
+builder = "anchor-sbf"
+
+[registry]
+url = "https://crates.io"
+
+[targets]
+anchor = "0.29.0"
+
+[scripts]
+test = "ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
+init = "npx ts-node scripts/init_all.ts"
+
+[features]
+seeds = false
